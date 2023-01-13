@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+
+.adminmain {
+  position: relative;
+  background-size: cover;
+  background-image: linear-gradient(
+    to left top,
+    #f9c1d5,
+    #eec9e9,
+    #dfd2f8,
+    #cfdcff,
+    #c4e4ff,
+    #cae7ff,
+    #d1ebff,
+    #d7eeff,
+    #e7efff,
+    #f4f1fe,
+    #fcf4fb,
+    #fff9fb
+  );
+}
+
+.adminmain_home {
+  background-image: linear-gradient(
+    to right,
+    #ff7979,
+    #ff936f,
+    #ffae6b,
+    #ffca6f,
+    #fde57e
+  );
+}
+.adminc {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  padding: 25px;
+  width: 600px;
+  background-color: rgb(243, 145, 137);
+}
+.adminreq {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  padding: 25px;
+  width: 800px;
+  background-color: rgb(243, 145, 137);
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+}
+
+.addlabel {
+  float: left;
+  font-size: 25px;
+}
+/* Set a style for the submit button */
+.addbtn {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 20px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.addbtn:hover {
+  opacity: 1;
+}
+
+.imgf {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgf .upload {
+  width: 150%;
+  height: 150%;
+}
+
+.a_upload {
+  margin-left: 195px;
+  width: 100%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+.fimages {
+  margin-left: 10px;
+  width: 100%;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+.sess_prod {
+  background-color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border: thick;
+  height: 55px;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.pname_text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.proof_img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.upload {
+  height: 100%;
+  margin-right: -40%;
+  font-size: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.add_cat {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+}
+.fileimage {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-left: 0 auto;
+}
+.select {
+  font-size: 25px;
+}

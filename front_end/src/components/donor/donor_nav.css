@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.donor_nav {
+  width: 100%;
+  height: 100%;
+}
+.image img {
+  width: 2500px;
+  height: 1250px;
+}
+
+.image .btn {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: rgb(4, 101, 130);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.image .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.image .btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.image .btn:hover span {
+  padding-right: 25px;
+}
+.image .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.donor_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: rgb(4, 101, 130);
+}
+.donor_nav {
+  height: 70px;
+}
+
+.donor_nav .donor_li a {
+  display: block;
+  color: rgb(26, 17, 17);
+  text-align: center;
+  text-decoration: none;
+}
+
+.donor_nav .donor_li a:hover:not(.active) {
+  background-color: #ddd;
+  color: rgb(4, 101, 130);
+}
+
+.donor_nav .donor_li a.active {
+  color: white;
+  padding: 10px;
+  float: left;
+}
+.donor_nav .donor_li a.links {
+  color: white;
+  padding: 25px;
+  width: 200px;
+  height: 100px;
+  float: right;
+  font-size: 25px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.side_p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+  padding-right: 1em;
+  padding-left: 0rem;
+  color: white;
+}
+
+.side_d {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  color: white;
+}
+
+.donor_nav li .toggle_area {
+  color: white;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  float: left;
+}
+
+.grid-container-don {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+.grid-item-don {
+  background-color: transparent;
+  padding: 80px 20px 180px 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.grid-item-don:hover {
+  transform: scale(1.2);
+}
+.dash_center-don {
+  margin-top: 5%;
+  font-size: 180px;
+}
+
+.donor_img {
+  margin-top: 2%;
+  /* margin-left: 15%; */
+  width: 35%;
+  align-items: center;
+}

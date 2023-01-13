@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+.donormain {
+  position: relative;
+ background-image: linear-gradient(
+    to top,
+    #f9c1d5,
+    #ffc6c9,
+    #ffcfbe,
+    #ffdab6,
+    #ffe7b5,
+    #ffe8b7,
+    #ffeaba,
+    #ffebbc,
+    #ffe2c1,
+    #ffdbcb,
+    #ffd7d8,
+    #ffd5e3
+  );
+}
+#table {
+  background-color: transparent;
+  position: absolute;
+  top: 20%;
+  padding: 100px 100px 100px 100px;
+  width: 1500px;
+  height: absolute;
+  text-align: center;
+}
+.donor {
+  position: absolute;
+  left: 18%;
+  margin-top: 30px;
+}
+
+.validateimage {
+  width: 250px;
+  height: 250px;
+  padding: 2px 2px 2px 2px;
+}
+
+#dtable_val {
+  left: 15%;
+  width: 1950px;
+  height: absolute;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+#dtable_val td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+}
+
+#dtable_val th {
+  background-color: rgb(243, 145, 137);
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 10px;
+}
+
+#dtable_val td {
+  position: sticky;
+  text-align: center;
+  height: 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  vertical-align: middle;
+  font-size: 25px;
+  padding: 8px 8px;
+}
+
+#dtable_val td button {
+  cursor: pointer;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: rgb(243, 145, 137);
+  line-height: 5px;
+  padding: 30px;
+  font-weight: bold;
+  border: none;
+}
+
+#dtable_val td button:hover {
+  text-align: center;
+  background-color: rgb(4, 101, 130);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 5px;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  border: none;
+}
+
+center {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 30px;
+}
+
+.d_heading {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-weight: bold;
+}

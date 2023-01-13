@@ -1,0 +1,53 @@
+{
+  "name": "login-register-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "delay": "^4.2.0",
+    "emailjs-com": "^2.6.4",
+    "react": "^16.8.6",
+    "react-background-slider": "^2.0.0",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^16.8.6",
+    "react-modal-login": "^1.3.3",
+    "react-pose": "^4.0.8",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-scroll-motion": "^0.2.1",
+    "react-spring": "^8.0.20",
+    "react-strike": "^1.0.5",
+    "react-switch": "^6.0.0",
+    "sweetalert": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

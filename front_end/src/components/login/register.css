@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+.r-btn {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 15px 35px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.r-btn:hover {
+  background-color: rgb(243, 145, 137);
+  color: black;
+  font-weight: bold;
+}
+
+.reg_home_btn {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  width: 150px;
+  height: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.reg_home_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+}
+.reg_home_btn span:after {
+  content: "\00ab";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.reg_home_btn:hover span {
+  padding-right: 25px;
+}
+.reg_home_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.error {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+  color: rgb(245, 96, 82);
+  font-weight: bold;
+}

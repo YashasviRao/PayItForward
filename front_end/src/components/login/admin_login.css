@@ -1,0 +1,139 @@
+.Ad_login {
+  background-image: linear-gradient(
+    to left top,
+    #e7e9f8,
+    #e4daf6,
+    #eacaed,
+    #f4b7db,
+    #fda5c0,
+    #ffa5ae,
+    #ffa79d,
+    #ffac8d,
+    #fcc194,
+    #f8d5a2,
+    #f5e7b6,
+    #f4f8ce
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.ad_btn {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 15px 35px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.ad_btn:hover {
+  background-color: rgb(243, 145, 137);
+  color: black;
+  font-weight: bold;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left top,
+    #f9c1d5,
+    #eec9e9,
+    #dfd2f8,
+    #cfdcff,
+    #c4e4ff,
+    #cae7ff,
+    #d1ebff,
+    #d7eeff,
+    #e7efff,
+    #f4f1fe,
+    #fcf4fb,
+    #fff9fb
+  );
+}
+
+.home_btn {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  width: 150px;
+  height: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.home_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+}
+.home_btn span:after {
+  content: "\00ab";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.home_btn:hover span {
+  padding-right: 25px;
+}
+.home_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.login {
+  width: 27em;
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  bottom: 80px;
+  right: 280px;
+  position: relative;
+  z-index: 99;
+  margin-left: 20%;
+  margin-top: 8%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+  border-radius: 4px;
+  position: relative;
+  z-index: 99;
+  width: 80%;
+  height: 95%;
+  z-index: 99;
+  margin-top: 100px;
+}
+
+.text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 2em;
+  margin-left: 2em;
+}

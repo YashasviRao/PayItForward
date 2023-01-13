@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 45px;
+  color: rgb(160, 65, 101);
+}
+#etable {
+  left: 15%;
+  padding: 100px;
+  width: 1700px;
+  height: absolute;
+  text-align: center;
+  background-color: rgb(160, 65, 101);
+  border-collapse: collapse;
+}
+#etable td,
+th {
+  border: 1px solid black;
+  vertical-align: middle;
+}
+#etable th {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+#etable td {
+  text-align: center;
+  height: 10px;
+}

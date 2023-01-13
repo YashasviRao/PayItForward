@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.PersonController.index()
+POST    /person                     controllers.PersonController.addPerson()
+POST    /addngo                     controllers.NgoController.addNgo()
+POST    /addimg                    controllers.TestController.addimg()
+POST    /addproduct                   controllers.ProductController.addproduct()
+POST    /feedback                   controllers.FeedbackController.feedback()
+#GET    /viewfeedback                   controllers.FeedbackController.viewfeedback()
+POST    /updateperson                  controllers.PersonController.updatePerson()
+GET     /persons                    controllers.PersonController.getPersons()
+GET  /delperson                  controllers.PersonController.delete()
+POST /login          controllers.PersonController.login
+POST /getEmail       controllers.PersonController.getEmail()
+POST /login1       controllers.PersonController.login1()
+GET     /ngos                    controllers.NgoController.getNgos()
+GET /products      controllers.ProductController.getProducts
+POST /updateproduct  controllers.ProductController.updateProduct
+POST /getproducts    controllers.ProductController.getdProducts
+POST /getcproducts    controllers.ProductController.getCProducts
+POST /deleteproduct              controllers.ProductController.delete
+#POST /getscproducts controllers.ProductController.getSCProducts
+GET     /feedbacks          controllers.FeedbackController.getFeedback
+POST /deletefeedback   controllers.FeedbackController.delete
+
+POST /singleproduct  controllers.ProductController.singleProduct
+POST /buyproduct controllers.ProductController.buyProduct
+POST /cartproduct controllers.ProductController.cartProduct
+POST /cartprofile    controllers.ProductController.Cartlist
+POST /delcart   controllers.ProductController.deleteCart
+POST /cprofile    controllers.ProductController.clist
+POST /csearch    controllers.ProductController.getSearchProducts
+POST /addsearch controllers.ProductController.addSearchProduct
+POST /customersearch  controllers.ProductController.customerSearch
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

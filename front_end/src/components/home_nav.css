@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.image11 {
+  height: 0px;
+  width: 300px;
+  margin-bottom: 0px;
+}
+.image11 .btn {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: #046582;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.image11 .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.image11 .btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.image11 .btn:hover span {
+  padding-right: 25px;
+}
+.image11 .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.home_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #046582;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.home_nav {
+  height: 100px;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.home_nav .home_li a {
+  display: block;
+  color: rgb(26, 17, 17);
+  text-align: center;
+  text-decoration: none;
+}
+
+.home_nav .home_li a:hover:not(.active) {
+  background-color: #ddd;
+  color: #046582;
+}
+
+.home_nav .home_li a.active {
+  color: white;
+  padding: 10px;
+  float: left;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.home_nav .home_li a.links {
+  color: white;
+  padding: 25px;
+  width: 205px;
+  height: 100px;
+  float: right;
+  font-size: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}

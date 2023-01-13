@@ -1,0 +1,56 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.PersonController.index()
+POST    /person                     controllers.PersonController.addPerson()
+POST    /addngo                     controllers.NgoController.addNgo()
+POST    /addimg                    controllers.TestController.addimg()
+POST    /addproduct                   controllers.ProductController.addproduct()
+POST    /feedback                   controllers.FeedbackController.feedback()
+#GET    /viewfeedback                   controllers.FeedbackController.viewfeedback()
+POST    /updateperson                  controllers.PersonController.updatePerson()
+POST    /updatengo                  controllers.NgoController.updateNgo()
+POST    /updatengodetails                  controllers.NgoController.updateNgodetails()
+GET     /persons                    controllers.PersonController.getPersons()
+GET  /delperson                  controllers.PersonController.delete()
+POST /login          controllers.PersonController.login
+POST /getEmail       controllers.PersonController.getEmail()
+POST /login1       controllers.PersonController.login1()
+POST /ngologin1       controllers.NgoController.login1()
+GET     /ngos                    controllers.NgoController.getNgos()
+GET     /cats                    controllers.CategoryController.getCats()
+POST     /subcats                    controllers.CategoryController.getSubCats()
+POST     /subcat_images                    controllers.CategoryController.getSubCat_images()
+GET     /ngoslist                   controllers.NgoController.getNgosList()
+GET /products      controllers.ProductController.getProducts
+POST /updateproduct  controllers.ProductController.updateProduct
+POST /getproducts    controllers.ProductController.getdProducts
+POST /getdproducts    controllers.ProductController.getdProductssum
+POST /getcproducts    controllers.ProductController.getCProducts
+POST /deleteproduct              controllers.ProductController.delete
+POST /deletesearchreq             controllers.ProductController.deletesearch
+POST /addcategory             controllers.CategoryController.addnewcategory
+POST /deletengo              controllers.NgoController.delete
+#POST /getscproducts controllers.ProductController.getSCProducts
+GET     /feedbacks          controllers.FeedbackController.getFeedback
+POST /deletefeedback   controllers.FeedbackController.delete
+POST /ngosummary  controllers.NgoController.ngosummary
+POST /singleproduct  controllers.ProductController.singleProduct
+POST /buyproduct controllers.ProductController.buyProduct
+POST /cartproduct controllers.ProductController.cartProduct
+POST /cartprofile    controllers.ProductController.Cartlist
+POST /cartnumber    controllers.ProductController.Cartnumber
+POST /delcart   controllers.ProductController.deleteCart
+POST /cprofile    controllers.ProductController.clist
+POST /csearch    controllers.ProductController.getSearchProducts
+POST /addsearch controllers.ProductController.addSearchProduct
+GET  /donorreq controllers.CategoryController.donorreqlist
+POST   /redonate controllers.CategoryController.redonatelist
+GET /catalogSearch  controllers.CategoryController.catalogSearch
+GET  /searchreq         controllers.ProductController.getSearchReq
+POST /customersearch  controllers.ProductController.customerSearch
+GET /donate_and_sell  controllers.CategoryController.donate_sell_fund
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

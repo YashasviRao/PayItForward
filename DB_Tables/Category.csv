@@ -1,0 +1,43 @@
+catid,cat,img1,pname,scat
+1,Vehicles,alto.jpg,Alto,Cars
+2,Vehicles,pulsar.jpg,Pulsor,Bikes
+3,Vehicles,omni.jpg,Omni,Cars
+4,Vehicles,bicycle.jpg,Hero,Bicycles
+5,Clothing,kidwear_frock.jpg,Frock,Kids
+6,Clothing,men_shirt.jpg,Shirt,Men
+7,Clothing,women_kurtha.jpeg,Kurtha,Women
+8,Stationery,mini_drafter.jpg,MiniDrafter,"Engineering Instruments"
+9,Stationery,glitter_pens.jpg,GlitterPens,"Writing Materials"
+10,Stationery,craft_kit.jpeg,CraftKit,"Other Stationery"
+11,Stationery,co_tb.jpg,CO_TextBook,Books
+12,Furnitures,sofa.jpg,Sofa,Sofas
+13,Electronics,hp_laptop.png,Laptop,"Computers and Laptops"
+14,Electronics,RedmiNote-9-Pro.jpg,Phone,Mobiles
+15,Appliances,washing_machine.jpg,WashingMachine,"Washing Machines"
+16,Appliances,hand_mixer.jpg,HandMixer,"Kitchen Appliances"
+17,Stationery,eraser.jpeg,Erasers,"Writing Materials"
+18,Accessories,burberry_scarf.jpg,Scarf,"Other Accessories"
+19,Appliances,StandMixer_HERO_V1_121119_325_V1_final.jpg,StandMixer,"Kitchen Appliances"
+20,Accessories,ear_rings.jpg,Earrings,Jewellery
+21,Accessories,shoes.jpg,Shoes,Footwear
+22,Accessories,wallet.jpg,Wallet,"Bags and Wallets"
+23,Stationery,cello_technotip.jpg,Pens,"Writing Materials"
+102,Furnitures,blob:http://localhost:3000/9bdf8ce6-00c6-4b28-a8ad-0e3321784be2,Bed,Beds
+103,Appliances,blob:http://localhost:3000/69548321-e526-40c6-b9c5-57e530050b71,AC,ACs
+104,Appliances,blob:http://localhost:3000/4d755da1-0a59-42e0-b941-4809814d518f,Fridge,Refrigerators
+105,Appliances,blob:http://localhost:3000/d6fe190c-2882-427f-91a2-dcea94224106,Fans,"Lights and Fans"
+106,Appliances,blob:http://localhost:3000/e5ef9304-9299-4b1f-b7d4-7917402305c1,Other,"Other Appliances"
+107,Clothing,blob:http://localhost:3000/9a26c973-77d7-40ad-8d96-4e22c2a08105,Sports,"Sports Wear"
+108,Clothing,blob:http://localhost:3000/4e44582e-106e-40cd-a6cd-2e7ff50ccb27,Others,Toddlers
+109,Electronics,blob:http://localhost:3000/98946bb8-b882-46d1-a759-d0f16e8771c2,Cameras,"Cameras and Lenses"
+110,Electronics,blob:http://localhost:3000/a364c321-0c92-4258-82d3-3622c2c19f9b,Audio,TV-Video-Audio
+111,Vehicles,blob:http://localhost:3000/aba224cc-56f1-4f71-8abf-a738484d5e3d,Autos,Autos
+112,Vehicles,blob:http://localhost:3000/93ac846d-e9d1-4b97-8ee5-913fb5eacef6,Trucks,Trucks
+113,Furnitures,blob:http://localhost:3000/65753278-c972-4729-9561-8366e75032d3,Home,"Home Decor"
+114,Furnitures,blob:http://localhost:3000/7bb59583-fb30-4d2d-a6e3-0ada9024dd9a,Ward,Wardrobes
+115,Furnitures,blob:http://localhost:3000/fefdaba2-118d-4c92-94fd-d15afc779a23,"Chairs and Dining","Chairs and Dining"
+116,Furnitures,blob:http://localhost:3000/627a9aaa-e239-411b-aecc-c1c876eabfd2,Kids,"Kids' Furniture"
+148,Accessories,blob:http://localhost:3000/a8d932db-182a-4d9a-b9ab-53a336213dba,Bracelets,Jewellery
+153,Electronics,blob:http://localhost:3000/a0e930cf-4439-422b-8065-67f51b102b3d,"Fujifilm Camera","Cameras and Lenses"
+154,Accessories,blob:http://localhost:3000/f2159946-d39f-4ee9-b18c-1ad78ef18673,Bracelet,Jewellery
+159,Stationery,blob:http://localhost:3000/5e65c206-b9cc-47d7-8db4-22c332f66090,notebook,Books

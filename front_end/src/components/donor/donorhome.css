@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.imgfile {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgfile .upload {
+  width: 100%;
+  height: 100%;
+}
+.d_fileimages {
+  float: left;
+  width: 16%;
+  margin-left: 35px;
+  padding: 20px 350px 20px 50px;
+}
+
+.upload {
+  float: left;
+  width: 16%;
+  margin-left: 2.5px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.submit {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.submit:hover {
+  background-color: #ffffff;
+  color: rgb(4, 101, 130);
+}
+
+h2 {
+  font-size: 45px;
+  color: rgb(4, 101, 130);
+}
+#etable {
+  left: 15%;
+  padding: 100px;
+  width: 1700px;
+  height: absolute;
+  text-align: center;
+  background-color: rgb(4, 101, 130);
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+#etable td,
+th {
+  border: 1px solid black;
+  vertical-align: middle;
+}
+#etable th {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+#etable td {
+  text-align: center;
+  height: 10px;
+}
+
+.main {
+  position: relative;
+}
+.procontainer1 {
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  border-radius: 5px;
+  background-color: rgb(243, 145, 137);
+  padding: 20px;
+  width: 1050px;
+  height: 650px;
+  padding-top: 40px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+.secondcontainer1 {
+  position: absolute;
+  left: 50%;
+  top: 9.5%;
+  border-radius: 5px;
+  background-color: rgb(243, 145, 137);
+  padding: 20px;
+  width: 1300px;
+  height: 1300px;
+  padding-top: 40px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-left: 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
+.col-75 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+  margin-left: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+.row {
+  padding-bottom: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
+.submit {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.submit:hover {
+  background-color: #ffffff;
+  color: rgb(4, 101, 130);
+}

@@ -1,0 +1,55 @@
+pid,cat,cost,des,did,expdate,img1,img2,ngo,nprice,pname,quality,quant,scat,state,year
+9,Vehicles,10000,"Bicycle is just 6 months old.",1,"2021-05-25 05:30:00.000000",bicycle.jpg,NULL,"Helping Hands",10000,Hero,used,0,Bicycles,2,2020
+20,Appliances,30000,Whirlpool,3,"2021-05-11 05:30:00.000000",washing_machine.jpg,NULL,"Helping Hands",28000,WashingMachine,new,0,"Washing Machines",2,2020
+21,Appliances,5000,Tristar,3,"2021-05-07 05:30:00.000000",hand_mixer.jpg,NULL,"Helping Hands",6000,HandMixer,new,0,"Kitchen Appliances",2,2020
+24,Appliances,30000,"Everything you need in you bakery!",4,"2021-05-18 05:30:00.000000",StandMixer_HERO_V1_121119_325_V1_final.jpg,NULL,"Helping Hands",25000,StandMixer,used,0,"Kitchen Appliances",2,2020
+29,Stationery,100,"Cello Techno Tip Blue",3,"2021-05-29 05:30:00.000000",cello_technotip.jpg,NULL,"Helping Hands",80,Pens,new,0,"Writing Materials",2,2020
+101,Accessories,700,"1 pair.",100,"2021-06-03 05:30:00.000000",ear_rings.jpg,NULL,"Helping Hands",500,Earrings,new,1,Jewellery,1,2020
+118,Appliances,40000,"1 tonne ACs",100,"2021-06-05 05:30:00.000000",ac.jpg,NULL,"Helping Hands",45000,"Split AC",new,2,ACs,1,2020
+120,Furnitures,40000,"Queen Size Bed",100,"2021-06-02 05:30:00.000000",bed1.jpeg,bed2.jpeg,"For People",35000,Bed,new,2,Beds,1,2021
+121,Vehicles,10000,"Smooth rides!",100,"2021-06-02 05:30:00.000000",cycle_b_1.jpeg,cycle_b_2.jpeg,"For People",9000,Bicycle,used,3,Bicycles,1,2019
+122,Furnitures,500,"Light and sturdy.",100,"2021-06-04 05:30:00.000000",chair2.jpeg,NULL,"For People",450,"Study Chairs",new,5,"Chairs and Dining",1,2021
+123,Stationery,550,"Best for Engineering Drawing.",100,"2021-06-04 05:30:00.000000",drafter2.jpeg,drafter.jpg,"For People",450,"Mini Drafter",new,2,"Engineering Instruments",1,2020
+124,Appliances,15000,"Keeps food fresh.",100,"2021-06-08 05:30:00.000000",fridge_blue.jpeg,fridge_blue2.jpeg,"Helping Hands",12000,Fridge,used,2,Refrigerators,1,2020
+125,Furnitures,20000,"Very comfortable.",100,"2021-06-08 05:30:00.000000",leather_sofa_1.jpeg,leather_sofa_2.jpeg,"Helping Hands",18000,"Leather Sofa",new,2,Sofas,1,2020
+126,Clothing,500,"Get athletic!",100,"2021-06-08 05:30:00.000000",sportswear.jpg,NULL,"Helping Hands",450,"Running Tracks",new,10,"Sports Wear",1,2020
+127,Appliances,25000,"Good quality",100,"2021-06-08 05:30:00.000000",washing_machine.jpg,NULL,"Helping Hands",23000,"Washing Machine",used,3,"Washing Machines",1,2019
+128,Electronics,50000,HP,100,"2021-06-08 05:30:00.000000",hp_laptop.png,NULL,"Helping Hands",47000,Laptop,used,10,"Computers and Laptops",1,2018
+129,Appliances,15000,"Make surviving power cuts easy!",100,"2021-06-11 05:30:00.000000",invertor.jpg,NULL,"For People",15000,Invertor,new,2,"Other Appliances",1,2019
+130,Appliances,800,"Good quality",100,"2021-06-11 05:30:00.000000",fan.jpg,NULL,"For People",750,Fans,used,2,"Lights and Fans",1,2019
+132,Vehicles,20000,"Heavy duty",100,"2021-06-10 05:30:00.000000",truck.jpg,NULL,"Happy Minds",18000,Truck,used,3,Trucks,1,2020
+133,Vehicles,15000,"High quality",100,"2021-06-10 05:30:00.000000",auto.png,NULL,"Happy Minds",14000,Auto,used,6,Autos,1,2020
+134,Electronics,20000,"QLED TV",100,"2021-06-10 05:30:00.000000",samsung_tv1.jpg,samsung_tv.jpg,"Happy Minds",18000,"LED TV",new,3,TV-Video-Audio,1,2019
+135,Electronics,1000,"Film photos instantly! Pink.",100,"2021-06-06 05:30:00.000000",instax_camera.jpg,NULL,"Happy Minds",800,"Fujifilm Camera",new,0,"Cameras and Lenses",2,2018
+136,Clothing,500,"1 pair",100,"2021-06-06 05:30:00.000000",kids.jpg,kids2.jpeg,"Happy Minds",450,Pant-Shirt,new,5,Kids,1,2020
+137,Clothing,600,"Full sets",100,"2021-06-06 05:30:00.000000",just_born.jpg,NULL,"Happy Minds",600,"Baby clothes set",new,20,Toddlers,1,2020
+138,Furnitures,12000,"Spacious and wooden.",100,"2021-06-24 05:30:00.000000",wardrobe.jpg,NULL,"For People",11000,Wardrobe,used,3,Wardrobes,1,2018
+139,Furnitures,700,"Make your walls pretty!",100,"2021-06-24 05:30:00.000000",homedecor.jpg,NULL,"For People",500,"Wall decorations",new,5,"Home Decor",1,2021
+140,Furnitures,10000,"Safe and fixed.",100,"2021-06-24 05:30:00.000000",kids_bed.jpg,NULL,"For People",8000,"Bunk Bed",new,2,"Kids' Furniture",1,2020
+141,Accessories,1000,"Faux leather strap",100,"2021-06-24 05:30:00.000000",watch7b.png,NULL,"For People",800,Watch,new,3,"Other Accessories",1,2018
+155,Accessories,800,"1 pair",100,"2021-06-04 05:30:00.000000",ear_rings.jpg,NULL,"Happy Minds",600,Earrings,new,0,Jewellery,2,2019
+164,Accessories,500,"Very comfortable",100,"2021-06-23 05:30:00.000000",shoes.jpg,NULL,"For People",450,Shoes,used,20,Footwear,1,2021
+165,Accessories,500,"Matt finish",100,"2021-06-23 05:30:00.000000",w1.jpeg,NULL,"For People",300,Wallet,new,3,"Bags and Wallets",1,2020
+166,Appliances,10000,"Extremely powerful.",100,"2021-06-03 05:30:00.000000",hand_mixer.jpg,NULL,"Happy Minds",8000,"Hand Mixer",new,4,"Kitchen Appliances",1,2019
+167,Clothing,700,"Check shirt",100,"2021-06-03 05:30:00.000000",men_shirt.jpg,NULL,"Happy Minds",600,Shirt,new,4,Men,1,2020
+168,Stationery,500,"3rd Edition",100,"2021-06-03 05:30:00.000000",co_tb.jpg,NULL,"Happy Minds",450,"Computer Organisation Textbook",used,3,Books,1,2020
+169,Accessories,1000,Green,100,"2021-06-03 05:30:00.000000",bag_green1.jpeg,bag_green2.jpeg,"Happy Minds",800,Handbag,new,2,"Bags and Wallets",1,2018
+170,Accessories,700,Purple,100,"2021-06-03 05:30:00.000000",bag_purple1.jpeg,bag_purple2.jpeg,"Happy Minds",500,"Big bag",used,2,"Bags and Wallets",1,2020
+171,Vehicles,25000,"3 years old",1,"2021-06-16 05:30:00.000000",bike_d_1.jpg,NULL,"Helping Hands",23000,Scooter,used,1,Bikes,1,2018
+172,Electronics,10000,Samsung,1,"2021-06-16 05:30:00.000000",samsung1.jpeg,NULL,"Helping Hands",9000,"Smart Phone",used,1,Mobiles,1,2020
+173,Vehicles,125000,"Heavy duty",1,"2021-06-16 05:30:00.000000",pulsar.jpg,NULL,"Helping Hands",120000,Pulsor,used,2,Bikes,1,2020
+174,Accessories,1500,"Pink interior",1,"2021-06-16 05:30:00.000000",sonata1.jpeg,sonata2.jpeg,"Helping Hands",1200,"Sonata Watch",used,2,"Other Accessories",1,2019
+175,Furnitures,12000,"Queen size",1,"2021-06-16 05:30:00.000000",bed_a_1.jpg,bed_a_2.jpg,"Helping Hands",10000,Bed,used,2,Beds,1,2018
+176,Vehicles,100000,"Good condition",2,"2021-06-16 05:30:00.000000",alto.jpg,NULL,"For People",9000,Alto,used,1,Cars,1,2017
+177,Furnitures,12000,"Decor bed",2,"2021-06-16 05:30:00.000000",bed_d_1.jpeg,NULL,"For People",10000,"Fancy bed",new,1,"Kids' Furniture",1,2020
+178,Appliances,15000,Red,2,"2021-06-16 05:30:00.000000",fridge_red1.jpeg,fridge_red2.jpeg,"For People",13000,Fridge,used,1,Refrigerators,1,2020
+179,Appliances,15000,"Kitchen Aid",2,"2021-06-16 05:30:00.000000",StandMixer_HERO_V1_121119_325_V1_final.jpg,NULL,"For People",13500,"Stand Mixer",new,2,"Kitchen Appliances",1,2020
+180,Stationery,100,"Smooth erasers",2,"2021-06-16 05:30:00.000000",eraser.jpeg,NULL,"For People",80,Erasers,new,3,"Writing Materials",1,2020
+181,Stationery,300,"Perfect for crafts",4,"2021-06-14 05:30:00.000000",craft_kit.jpeg,NULL,"Happy Minds",250,"Craft Kit",new,2,"Other Stationery",1,2020
+182,Stationery,100,"Pack of 10 - Blue",4,"2021-06-14 05:30:00.000000",cello_technotip.jpg,NULL,"Happy Minds",80,Pens,new,3,"Writing Materials",1,2020
+183,Furnitures,10000,"Grey - cloth exterior",4,"2021-06-14 05:30:00.000000",sofa1.jpeg,sofa2.jpeg,"Happy Minds",9000,Sofa,used,3,Sofas,1,2018
+184,Electronics,700,"Instant Film Photos - Pink",4,"2021-06-14 05:30:00.000000",instax_camera.jpg,NULL,"Happy Minds",500,"Fujifilm Camera",new,2,"Cameras and Lenses",1,2020
+185,Clothing,500,Cotton,4,"2021-06-14 05:30:00.000000",women_kurtha.jpeg,NULL,"Happy Minds",350,Kurta,new,2,Women,1,2020
+186,Accessories,1000,White,4,"2021-06-14 05:30:00.000000",shoe_white1.jpeg,NULL,"Happy Minds",800,Shoes,new,2,Footwear,1,2020
+187,Accessories,500,Artificial,3,"2021-05-31 05:30:00.000000",bracelet.jpg,NULL,"For People",NULL,Bracelet,new,2,Jewellery,0,2019
+188,Accessories,1000,Silver,3,"2021-05-31 05:30:00.000000",necklace.jpg,NULL,"For People",NULL,Necklace,new,1,Jewellery,0,2021

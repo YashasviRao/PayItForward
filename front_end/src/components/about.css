@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+
+.about {
+  background-image: radial-gradient(
+    circle,
+    #f9dada,
+    #ffdfd6,
+    #ffe5d2,
+    #ffeccf,
+    #fdf5d0
+  );
+}
+
+.aboutus {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 45px;
+  float: left;
+  color: black;
+  text-align: justify;
+  font-weight: bold;
+  margin: 5px 100px 5px 100px;
+}
+
+.contentHead_1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+  color: #0a043c;
+  text-align: justify;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+.contentHead_2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+  color: #0a043c;
+  text-align: justify;
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.imageabout {
+  box-shadow: 6px 6px 7px #888888;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-left: 135px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 120px;
+  float: left;
+}
+
+.imageabout:before {
+  content: "";
+  margin-top: -63px;
+  margin-left: -80px;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.imageabout:hover {
+  box-shadow: 3px 3px 7px #888888;
+  cursor: pointer;
+}
+
+.how_we_work {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.data {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-image: radial-gradient(
+    circle,
+    #f9dada,
+    #ffdfd6,
+    #ffe5d2,
+    #ffeccf,
+    #fdf5d0
+  );
+  font-size: 35px;
+  width: 2500px;
+  text-align: justify;
+}
+
+.about_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #046582;
+}
+
+.about_nav {
+  height: 100px;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.about_nav .about_li a {
+  display: block;
+  color: rgb(26, 17, 17);
+  text-align: center;
+  text-decoration: none;
+}
+
+.about_nav .about_li a:hover:not(.active) {
+  background-color: #ddd;
+  color: #046582;
+}
+
+.about_nav .about_li a.active {
+  color: white;
+  padding: 10px;
+  float: left;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.about_nav .about_li a.links {
+  color: white;
+  padding: 25px;
+  width: 235px;
+  height: 100px;
+  float: right;
+  font-size: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.accordian {
+  padding: 20px;
+}
+
+.about_image {
+  margin-top: -5%;
+  /* margin-left: 15%; */
+  width: 40%;
+  align-items: center;
+}

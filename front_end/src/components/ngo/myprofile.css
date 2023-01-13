@@ -1,0 +1,84 @@
+@import "https://www.w3schools.com/w3css/4/w3.css";
+* {
+  box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.donatedproducts {
+  margin-top: 5px;
+}
+h2 {
+  color: rgb(160, 65, 101);
+}
+.profile {
+  position: relative;
+}
+.pcontainer1 {
+  position: absolute;
+  left: 36%;
+  top: 15%;
+  border-radius: 5px;
+  background-color: rgb(243, 145, 137);
+  padding: 20px;
+  width: 750px;
+  height: 1000px;
+  padding-top: 40px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+}
+
+.pro_title1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+#productstable {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  width: 500px;
+}
+td {
+  font-size: 20px;
+}
+
+.collabel {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  margin-left: 100px;
+}
+
+.colvalue {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  margin-left: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.foralign td {
+  text-align: center;
+}
+
+.n_btn {
+  background-color: rgb(4, 101, 130);
+  color: white;
+  padding: 20px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.n_btn:hover {
+  background-color: rgb(16, 137, 173);
+}

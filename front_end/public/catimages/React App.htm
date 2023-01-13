@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/pur_home -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      html,
+      body,
+      #root,
+      .App {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+    </style>
+    <style type="text/css">
+      .App {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 40vmin;
+        pointer-events: none;
+      }
+
+      .App-header {
+        background-color: #282c34;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+      }
+
+      .App-link {
+        color: #61dafb;
+      }
+
+      @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .login {
+        width: 27em;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        position: relative;
+        z-index: 99;
+      }
+      .login .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+        border-radius: 4px;
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        padding: 17px 10px;
+      }
+      .login .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90%;
+        background-color: #3498db;
+        width: 100%;
+        position: absolute;
+        right: -34%;
+        border-radius: 6px;
+        z-index: 1;
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+      }
+      .login .right-side.right {
+        right: -40%;
+        align-items: flex-end;
+      }
+      .login .right-side.right:hover {
+        right: -45%;
+      }
+      .login .right-side.left {
+        right: 40%;
+        align-items: flex-start;
+      }
+      .login .right-side.left:hover {
+        right: 45%;
+      }
+      .login .right-side .text {
+        font-size: 21px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 3em;
+        margin-left: 3em;
+      }
+
+      .btn {
+        font-size: 21px;
+        padding: 5px 20px;
+        border: 0;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 3px;
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #2386c8;
+      }
+      .btn:focus {
+        outline: none;
+      }
+    </style>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+    </style>
+    <style type="text/css">
+      .App {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 40vmin;
+        pointer-events: none;
+      }
+
+      .App-header {
+        background-color: #282c34;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+      }
+
+      .App-link {
+        color: #61dafb;
+      }
+
+      @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .login {
+        width: 27em;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        position: relative;
+        z-index: 99;
+      }
+      .login .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+        border-radius: 4px;
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        height: 130%;
+        z-index: 99;
+      }
+      .login .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 130%;
+        padding-top: 20px;
+        margin-top: 160px;
+        background-color: #3498db;
+        width: 100%;
+        position: absolute;
+        right: -34%;
+        border-radius: 6px;
+        z-index: 1;
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+        box-shadow: 10px 0px 12px 2px rgba(15, 15, 15, 0.281);
+      }
+      .login .right-side.right {
+        right: -100%;
+        align-items: flex-end;
+      }
+      .login .right-side.right:hover {
+        right: -95%;
+      }
+      .login .right-side.left {
+        right: 10%;
+        align-items: flex-start;
+      }
+      .login .right-side.left:hover {
+        right: 15%;
+      }
+      .login .right-side .text {
+        font-size: 21px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 3em;
+        margin-left: 3em;
+      }
+
+      .btn {
+        font-size: 21px;
+        padding: 5px 20px;
+        border: 0;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 3px;
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #2386c8;
+      }
+      .btn:focus {
+        outline: none;
+      }
+    </style>
+    <style type="text/css">
+      .base-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .base-container .header {
+        font-size: 24px;
+        font-family: "Open Sans", sans-serif;
+      }
+      .base-container .content {
+        display: flex;
+        flex-direction: column;
+      }
+      .base-container .content .image {
+        width: 21em;
+      }
+      .base-container .content .image img {
+        width: 100%;
+        height: 100%;
+      }
+      .base-container .content .form {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .base-container .content .form .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+      }
+      .base-container .content .form .form-group label {
+        font-size: 20px;
+      }
+      .base-container .content .form .form-group input {
+        margin-top: 6px;
+        min-width: 18em;
+        height: 37px;
+        padding: 0px 10px;
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        background-color: #f3f3f3;
+        border: 0;
+        border-radius: 4px;
+        margin-bottom: 31px;
+        transition: all 250ms ease-in-out;
+      }
+      .base-container .content .form .form-group input:focus {
+        outline: none;
+        box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+      }
+      .base-container .footer {
+        margin-top: 3em;
+      }
+    </style>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+
+      .image .btn {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        background-color: rgb(4, 101, 130);
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      .image .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      .image .btn span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .image .btn:hover span {
+        padding-right: 25px;
+      }
+      .image .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: rgb(4, 101, 130);
+      }
+      .nav {
+        height: 70px;
+      }
+
+      .nav li a {
+        display: block;
+        color: rgb(26, 17, 17);
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .nav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: rgb(4, 101, 130);
+      }
+
+      .nav li a.active {
+        color: white;
+        padding: 10px;
+        float: left;
+      }
+      .nav li a.links {
+        color: white;
+        padding: 25px;
+        width: 90px;
+        float: right;
+        font-size: 20px;
+      }
+    </style>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap);
+    </style>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Dancing+Script&display=swap);
+    </style>
+    <style type="text/css">
+      #about {
+        padding: 20px 500px 20px 500px;
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 55%;
+        background-size: cover;
+      }
+
+      .imageabout {
+        box-shadow: 6px 6px 7px #888888;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+        margin-left: 135px;
+        transform: rotate(45deg);
+        margin-right: 120px;
+        float: left;
+      }
+
+      .imageabout:before {
+        content: "";
+        margin-top: -63px;
+        margin-left: -80px;
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        transform: rotate(-45deg);
+      }
+
+      .imageabout:hover {
+        box-shadow: 3px 3px 7px #888888;
+        cursor: pointer;
+      }
+      .contentHead {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: rgb(4, 101, 130);
+      }
+      p {
+        font-family: "Dancing Script", cursive;
+        font-size: 23px;
+        float: left;
+        color: black;
+      }
+
+      #contact {
+        padding: 20px 1800px 40px 200px;
+        background-image: url(/static/media/ccc.9e8b23a6.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: cover;
+        background-size: 100%;
+      }
+
+      #text {
+        font-size: 25px;
+        border-radius: 25px;
+        border: 2px solid black;
+      }
+      #textarea {
+        font-size: 25px;
+        border-radius: 25px;
+        border: 2px solid black;
+      }
+
+      #submit {
+        background-color: rgb(4, 101, 130);
+        color: white;
+        font-size: 20px;
+        width: 250px;
+        height: 70px;
+      }
+      #submit:hover {
+        background-color: #000;
+        color: white;
+      }
+    </style>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      .imgfile {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border: 2px solid #f8f8f8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .imgfile .upload {
+        width: 100%;
+        height: 100%;
+      }
+
+      input[type="text"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      input[type="date"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      .submit {
+        background-color: rgb(4, 101, 130);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .submit:hover {
+        background-color: #ffffff;
+        color: rgb(4, 101, 130);
+      }
+
+      .main {
+        position: relative;
+      }
+      .container {
+        position: absolute;
+        left: 45%;
+        top: 25%;
+        border-radius: 5px;
+        background-color: rgb(243, 145, 137);
+        padding: 20px;
+        width: 1050px;
+        height: 560px;
+      }
+
+      .col-25 {
+        float: left;
+        width: 15%;
+        margin-top: 6px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 30%;
+        margin-top: 6px;
+        margin-right: 50px;
+      }
+      .fileimages {
+        float: left;
+        width: 16%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+      .home {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      .nav {
+        width: 100%;
+        height: 100%;
+      }
+      .image img {
+        width: 2500px;
+        height: 1250px;
+      }
+
+      .image .btn {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        background-color: rgb(4, 101, 130);
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      .image .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      .image .btn span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .image .btn:hover span {
+        padding-right: 25px;
+      }
+      .image .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: rgb(4, 101, 130);
+      }
+      .nav {
+        height: 70px;
+      }
+
+      .nav li a {
+        display: block;
+        color: rgb(26, 17, 17);
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .nav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: rgb(4, 101, 130);
+      }
+
+      .nav li a.active {
+        color: white;
+        padding: 10px;
+        float: left;
+      }
+      .nav li a.links {
+        color: white;
+        padding: 25px;
+        height: 84px;
+        width: 140px;
+        float: right;
+        font-size: 20px;
+      }
+    </style>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+      .home {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      .nav {
+        width: 100%;
+        height: 100%;
+      }
+      .image img {
+        width: 2500px;
+        height: 1250px;
+      }
+
+      .image .btn {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        background-color: rgb(4, 101, 130);
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      .image .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      .image .btn span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .image .btn:hover span {
+        padding-right: 25px;
+      }
+      .image .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: rgb(4, 101, 130);
+      }
+      .nav {
+        height: 70px;
+      }
+
+      .nav li a {
+        display: block;
+        color: rgb(26, 17, 17);
+        text-align: center;
+        text-decoration: none;
+        margin-right: 35px;
+        padding-right: 25px;
+      }
+
+      .nav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: rgb(4, 101, 130);
+      }
+
+      .nav li a.active {
+        color: white;
+        padding: 15px;
+        float: left;
+      }
+      .nav li a.links {
+        color: white;
+        padding: 25px;
+        width: 130px;
+        height: 100px;
+        float: right;
+        font-size: 20px;
+      }
+    </style>
+    <style type="text/css">
+      .adminmain {
+        position: relative;
+      }
+      .adminc {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        padding: 25px;
+        width: 600px;
+        background-color: rgb(243, 145, 137);
+      }
+      /* Full-width input fields */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #ffffff;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #ffffff;
+      }
+
+      label {
+        float: left;
+      }
+      /* Set a style for the submit button */
+      .addbtn {
+        background-color: rgb(4, 101, 130);
+        color: white;
+        padding: 16px 20px;
+        margin: 30px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.9;
+      }
+
+      .addbtn:hover {
+        opacity: 1;
+      }
+
+      .imgf {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border: 2px solid #f8f8f8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .imgf .upload {
+        width: 100%;
+        height: 100%;
+      }
+
+      .fimages {
+        margin-left: 120px;
+        width: 19%;
+      }
+    </style>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      h2 {
+        color: rgb(4, 101, 130);
+      }
+      .profile {
+        position: relative;
+      }
+      .pcontainer {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        border-radius: 5px;
+        background-color: rgb(243, 145, 137);
+        width: 700px;
+        height: 400px;
+      }
+
+      .collabel {
+        float: left;
+        width: 15%;
+        margin-top: 6px;
+        margin-left: 100px;
+      }
+
+      .colvalue {
+        float: left;
+        width: 30%;
+        margin-top: 6px;
+        margin-left: 30px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <style type="text/css">
+      .adminmain {
+        position: relative;
+      }
+      .atable {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        padding-bottom: 150px;
+        background-color: rgb(255, 255, 255);
+        width: 700px;
+        height: 400px;
+      }
+    </style>
+    <style type="text/css">
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body,
+      .app1 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+      .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .popup_inner {
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        top: 25%;
+        bottom: 25%;
+        margin: auto;
+        background: white;
+      }
+    </style>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+      .home {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      .nav {
+        width: 100%;
+        height: 100%;
+      }
+      .image img {
+        width: 2500px;
+        height: 1250px;
+      }
+
+      .image .btn {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        background-color: rgb(4, 101, 130);
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      .image .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      .image .btn span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .image .btn:hover span {
+        padding-right: 25px;
+      }
+      .image .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: rgb(4, 101, 130);
+      }
+      .nav {
+        height: 70px;
+      }
+
+      .nav li a {
+        display: block;
+        color: rgb(26, 17, 17);
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .nav li a:hover:not(.active) {
+        background-color: #ddd;
+        color: rgb(4, 101, 130);
+      }
+
+      .nav li a.active {
+        color: white;
+        padding: 10px;
+        float: left;
+      }
+      .nav li a.links {
+        color: white;
+        padding: 25px;
+        height: 84px;
+        width: 140px;
+        float: right;
+        font-size: 20px;
+      }
+
+      .nav li .searchlink {
+        width: 1000px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 18px;
+      }
+
+      .search {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap);
+    </style>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      .main {
+        position: relative;
+      }
+
+      .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+      }
+
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+      }
+
+      /* Some media queries for responsiveness */
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      .ccontainer {
+        position: absolute;
+        top: 6.8%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .cat {
+        position: absolute;
+        top: 10%;
+        left: 17%;
+        margin-top: 30px;
+        background-color: #dcdcdc;
+      }
+      .cat-block {
+        background: white;
+        width: 2000px;
+        height: 300px;
+        padding: 10px;
+        margin-top: 30px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        float: left;
+      }
+      .csidebar {
+        width: 400px;
+        height: 140%;
+        background: rgb(185, 134, 154);
+        padding: 30px 0px;
+        position: fixed;
+      }
+
+      .csidebar h2 {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .csidebar ul li {
+        padding: 15px;
+        background-color: #e1ddf3;
+
+        border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .csidebar ul li a {
+        color: #020202;
+        display: block;
+      }
+
+      .csidebar ul li a .fas {
+        width: 25px;
+      }
+
+      .csidebar ul li:hover {
+        background-color: rgb(4, 101, 130);
+      }
+
+      .csidebar ul li:hover a {
+        color: #fff;
+      }
+
+      .csidebar .social_media {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+      }
+
+      .csidebar .social_media a {
+        display: block;
+        width: 40px;
+        background: #594f8d;
+        height: 40px;
+        line-height: 45px;
+        text-align: center;
+        margin: 0 5px;
+        color: #bdb8d7;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .main_content {
+        width: 100%;
+        margin-left: 300px;
+      }
+
+      .main_content .header {
+        padding: 20px;
+        background: #fff;
+        color: #717171;
+        border-bottom: 1px solid #e0e4e8;
+        text-align: center;
+      }
+
+      .main_content .info {
+        margin: 0px;
+        color: #717171;
+        line-height: 25px;
+      }
+
+      .main_content .info div {
+        margin-bottom: 20px;
+      }
+
+      @media (max-height: 500px) {
+        .social_media {
+          display: none !important;
+        }
+      }
+
+      .subcat {
+        border: 1px solid #020202;
+        width: 18%;
+        height: 230px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(66, 64, 64);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: 0.3s ease;
+      }
+
+      .subcat:hover .overlay {
+        transform: scale(1);
+      }
+
+      .cattext {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <div
+          class="main"
+          style="
+            width: 100%;
+            height: 100%;
+            background-color: rgb(220, 220, 220);
+          "
+        >
+          <div class="home">
+            <div class="nav">
+              <ul>
+                <li>
+                  <a class="active" href="http://localhost:3000/"
+                    ><img
+                      alt="sorry"
+                      height="120%"
+                      width="15%"
+                      src="./React App_files/pit.8a5c58b1.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a class="links" href="http://localhost:3000/login">LogOut</a>
+                </li>
+                <li>
+                  <a class="links" href="http://localhost:3000/cart">MyCart</a>
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Search products.."
+                    class="searchlink"
+                  /><button class="search">Search</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ccontainer">
+            <div class="csidebar">
+              <h2>Products Categories</h2>
+              <ul>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-user"></i>Electronics</a
+                  >
+                </li>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-address-card"></i>Appliances</a
+                  >
+                </li>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-blog"></i>Vehicles</a
+                  >
+                </li>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-address-book"></i>Clothing</a
+                  >
+                </li>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-address-book"></i>Stationery</a
+                  >
+                </li>
+                <li>
+                  <a href="http://localhost:3000/pur_home#"
+                    ><i class="fas fa-address-book"></i>Accessories</a
+                  >
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cat">
+            <div class="cat-block">
+              <h2>FURNITURE</h2>
+              <br />
+              <div id="furniture">
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Sofas"
+                    ><img
+                      src="./React App_files/sofa.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Sofas</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Beds"
+                    ><img
+                      src="./React App_files/bed.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Beds</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Home Decors"
+                    ><img
+                      src="./React App_files/Home Decors.jpeg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Home Decors</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Wadrobes"
+                    ><img
+                      src="./React App_files/wadrobes.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Wadrobes</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Dining"
+                    ><img
+                      src="./React App_files/wadrobes.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Dining</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="clothing">
+                <h2>CLOTHING</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Mens"
+                    ><img
+                      src="./React App_files/men2.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Mens</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Womens"
+                    ><img
+                      src="./React App_files/womens.png"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Womens</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Kids"
+                    ><img
+                      src="./React App_files/kids.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Kids</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Other Clothing"
+                    ><img
+                      src="./React App_files/oclothes.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Other Clothing</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="electronics">
+                <h2>ELECTRONICS</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Cameras And Lenses"
+                    ><img
+                      src="./React App_files/camera.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Cameras And Lenses</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/TV-Video-Audio"
+                    ><img
+                      src="./React App_files/tvs.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">TV-Video-Audio</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Computers"
+                    ><img
+                      src="./React App_files/computers.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Computers</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Mobiles"
+                    ><img
+                      src="./React App_files/mobile.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Mobiles</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="appliances">
+                <h2>APPLIANCES</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Computers"
+                    ><img
+                      src="./React App_files/ac.png"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay"><div class="cattext">ACs</div></div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Cameras And Lenses"
+                    ><img
+                      src="./React App_files/fridge.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Refrigerators</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/TV-Video-Audio"
+                    ><img
+                      src="./React App_files/wm.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Washing Machines</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Mobiles"
+                    ><img
+                      src="./React App_files/ka.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Kitchen Appliances</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="vehicles">
+                <h2>VEHICLES</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Cars"
+                    ><img
+                      src="./React App_files/car1.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Cars</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Bikes"
+                    ><img
+                      src="./React App_files/bik.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Bikes</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Bicycles"
+                    ><img
+                      src="./React App_files/cycle.png"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Bicycles</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Other Vehicles"
+                    ><img
+                      src="./React App_files/ovehicles.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Other Vehicles</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="stationery">
+                <h2>STATIONARY</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Writing Materials"
+                    ><img
+                      src="http://localhost:3000/catimages/pen2.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Writing Materials</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Books"
+                    ><img
+                      src="./React App_files/book.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Books</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a
+                    href="http://localhost:3000/scatlist/Engineering Instruments"
+                    ><img
+                      src="./React App_files/dandc.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Engineering Instruments</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/OtherStationary"
+                    ><img
+                      src="./React App_files/ostat.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">OtherStationary</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cat-block">
+              <div id="accessories">
+                <h2>ACCESSORIES</h2>
+                <br />
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Watches"
+                    ><img
+                      src="./React App_files/watch1.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Watches</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Jewellery"
+                    ><img
+                      src="./React App_files/jew3.jpeg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Jewellery</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Footwear"
+                    ><img
+                      src="./React App_files/foot.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Footwear</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Bags And Wallets"
+                    ><img
+                      src="./React App_files/bandc3.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Bags And Wallets</div>
+                    </div></a
+                  >
+                </div>
+                <div class="subcat">
+                  <a href="http://localhost:3000/scatlist/Other Accessories"
+                    ><img
+                      src="./React App_files/ostat.jpg"
+                      alt="Avatar"
+                      class="image"
+                    />
+                    <div class="overlay">
+                      <div class="cattext">Other Accessories</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="./React App_files/bundle.js"></script>
+    <script src="http://localhost:3000/static/js/0.chunk.js"></script>
+    <script src="./React App_files/main.chunk.js"></script>
+    <script src="http://localhost:3000/main.967a879fc58995e6f4e3.hot-update.js"></script>
+  </body>
+</html>
